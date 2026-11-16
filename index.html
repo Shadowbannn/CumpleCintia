@@ -9,6 +9,13 @@
   font-weight:400;
   font-style:normal;
 }
+@font-face{
+  font-family:'Minecraftia';
+  src:url('Minecraftia-Regular.ttf') format('truetype');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
 /* Layout: Windows XP desktop under a dusk-pink sky. Stage 1 = a pink 2000s flip phone that arrives closed and vibrating, opens on tap and shows a notification, then the SMS. Stage 2 = authentic Luna-blue mail window (folders, list, preview) holding a pink glitter invite. Stage 3 = a fake browser window with a retro pink web page (Inspo) with a polaroid photo gallery. XP balloon tooltip as the hint. Single committed look, so no dark variant. */
 :root{
   --luna:#0a5fe5; --luna-edge:#0831d9; --paper:#ece9d8; --sel:#316ac5;
@@ -260,6 +267,7 @@ button.nbtn:hover{border-color:#e68b2c;background:linear-gradient(#fff,#fbe9cc)}
 .ticker span{display:inline-block;padding-left:100%;animation:marq 22s linear infinite}
 @keyframes marq{to{transform:translateX(-100%)}}
 .intro{margin:14px 18px 6px;text-align:center;font-size:14px}
+.inspo-intro{font-family:'Minecraftia',var(--ui)}
 .playlist-cta{color:var(--rose)}
 .h2{margin:18px 18px 10px;padding-bottom:4px;border-bottom:1px dotted #f0b6d2;display:flex;justify-content:space-between;gap:10px;align-items:baseline;font:700 13px var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--deep)}
 .h2 small{font:400 12px var(--ui);letter-spacing:0;text-transform:none;color:#8a7482}
@@ -438,7 +446,7 @@ button.nbtn:hover{border-color:#e68b2c;background:linear-gradient(#fff,#fbe9cc)}
 
               <dl class="info">
                 <div><dt>Día</dt><dd data-k="dia">Sábado</dd></div>
-                <div><dt>Fecha</dt><dd data-k="fecha">Sábado 21 de 2026</dd></div>
+                <div><dt>Fecha</dt><dd data-k="fecha">Sábado 21 de noviembre de 2026</dd></div>
                 <div><dt>Hora</dt><dd data-k="hora">21:00 hs</dd></div>
                 <div><dt>Lugar</dt><dd data-k="lugar">Casa de Cintia · Canelones 1632</dd></div>
                 <div><dt>Dress code</dt><dd data-k="dress">Años 2000 (Y2k)</dd></div>
@@ -487,7 +495,7 @@ button.nbtn:hover{border-color:#e68b2c;background:linear-gradient(#fff,#fbe9cc)}
           
         </div>
         <div class="ticker" aria-hidden="true"><span>★ looks ★ deco ★ colores ★ música ★ ideas ★ looks ★ deco ★ colores ★ música ★ ideas ★</span></div>
-        <p class="intro" data-k="inspoIntro" data-multi>¿VAS A SALIR DE FIESTA?
+        <p class="intro inspo-intro" data-k="inspoIntro" data-multi>¿VAS A SALIR DE FIESTA?
 ¡No salgas sin inspiración!
 Descubrí los looks más HOT del momento y encontrá tu estilo para esta noche..</p>
 
